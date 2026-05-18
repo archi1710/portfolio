@@ -305,75 +305,100 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
+  * {
+    max-width: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 
   /* NAVBAR */
 
-.navbar {
-  padding: 15px;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
+  .navbar {
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 
-.logo {
-  font-size: 28px;
-}
+  .logo {
+    font-size: 30px;
+  }
 
-.nav-links {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  width: 100%;
-  text-align: center;
-}
+  .nav-links {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    text-align: center;
+  }
 
-.nav-links a {
-  font-size: 18px;
-}
+  .nav-links a {
+    font-size: 18px;
+  }
 
   /* HERO SECTION */
 
   .hero {
-  flex-direction: column-reverse;
-  justify-content: center;
-  text-align: center;
-  padding: 180px 20px 80px;
-  gap: 30px;
-}
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 220px 20px 60px;
+    gap: 40px;
+  }
+
   .hero-left {
+    width: 100%;
     align-items: center;
   }
 
   .hero-title {
-  font-size: 48px;
-  line-height: 1.2;
-}
-
-  .typing-text {
-  font-size: 24px;
-}
-  .hero-text p {
-    font-size: 18px;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 15px;
   }
 
-  .hero-buttons {
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
+  .typing-text {
+    font-size: 24px;
+    width: 100%;
+    border-right: none;
+    animation: none;
+  }
 
-.hero-btn {
-  width: 220px;
-}
+  .hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  /* BUTTONS */
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .hero-btn {
+    width: 220px;
+  }
 
   /* IMAGE */
 
+  .hero-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .profile-img {
-  width: 250px;
-  height: 250px;
-}
+    width: 240px;
+    height: 240px;
+  }
 
   /* SECTION */
 
@@ -385,10 +410,11 @@ body {
     font-size: 42px;
   }
 
-  /* ABOUT TEXT */
+  /* ABOUT */
 
   .about-text {
     font-size: 18px;
+    line-height: 1.8;
   }
 
   /* BOXES */
@@ -413,7 +439,9 @@ body {
   }
 
   .contact-form input,
-  .contact-form textarea {
+  .contact-form textarea,
+  .contact-form button {
     width: 100%;
   }
+
 }
