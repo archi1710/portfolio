@@ -319,28 +319,36 @@ body {
   /* NAVBAR */
 
   .navbar {
-  width: 100%;
-  padding: 15px 20px;
-  display: flex;
-  align-items: center;
-}
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 
-.logo {
-  font-size: 32px;
-  margin-right: auto;
-} 
-}
+  .logo {
+    font-size: 32px;
+    text-align: center;
+  }
 
-.nav-links {
-  margin-left: auto;
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-}
+  .nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 10px;
+  }
 
-.nav-links a {
-  font-size: 14px;
-}
+  .nav-links a {
+    font-size: 14px;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+
   /* HERO SECTION */
 
   .hero {
