@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 
-export default function Contact() {
+function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -23,31 +23,55 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact">
+    <section
+      id="contact"
+      className="section"
+    >
 
-      <h2 style={{ fontSize: "40px" }}>Contact Me</h2>
+      <motion.h2
+        initial={{ opacity: 0, y: -40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        Contact Me
+      </motion.h2>
 
-      <form
+      <motion.form
         onSubmit={sendEmail}
-        style={{
-          maxWidth: "600px",
-          margin: "auto",
-          display: "flex",
-          flexDirection: "column",
-          gap: "15px"
-        }}
+        className="contact-form"
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
       >
 
-        <input name="name" placeholder="Your Name" required />
-        <input name="email" type="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          required
+        ></textarea>
 
         <button type="submit">
           Send Message
         </button>
 
-      </form>
+      </motion.form>
 
     </section>
   );
 }
+
+export default Contact;

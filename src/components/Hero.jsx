@@ -1,4 +1,4 @@
-import myPhoto from "../assets/myphoto.jpg";
+import myphoto from "../assets/myphoto.jpg";
 
 function Hero() {
   return (
@@ -26,16 +26,20 @@ function Hero() {
         <div className="hero-buttons">
 
           <a href="/resume.pdf" download>
-            <button className="hero-btn">
-              Download Resume
-            </button>
-          </a>
+  <button className="hero-btn">
+    Download Resume
+  </button>
+</a>
 
-          <a href="/resume.pdf" target="_blank">
-            <button className="hero-btn">
-              View Resume
-            </button>
-          </a>
+  <a
+  href="/resume.pdf"
+  target="_blank"
+  rel="noreferrer"
+  >
+  <button className="hero-btn">
+    View Resume
+  </button>
+   </a>
 
         </div>
 
@@ -44,7 +48,7 @@ function Hero() {
       <div className="hero-right">
 
         <img
-          src={myPhoto}
+          src={myphoto}
           alt="Archita"
           className="profile-img"
         />
