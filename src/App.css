@@ -309,6 +309,7 @@ body {
 
   * {
     max-width: 100%;
+    box-sizing: border-box;
   }
 
   body {
@@ -318,14 +319,17 @@ body {
   /* NAVBAR */
 
   .navbar {
-    padding: 15px 20px;
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
   }
 
   .logo {
-    font-size: 30px;
+    font-size: 32px;
+    text-align: center;
   }
 
   .nav-links {
@@ -333,40 +337,43 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 16px;
     flex-wrap: nowrap;
-    gap: 12px;
-    overflow-x: auto;
   }
 
   .nav-links a {
-    font-size: 14px;
+    font-size: 15px;
     white-space: nowrap;
+    text-decoration: none;
   }
 
   /* HERO SECTION */
 
   .hero {
+    display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 220px 20px 60px;
+    padding: 180px 20px 60px;
     gap: 40px;
   }
 
   .hero-left {
     width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
   .hero-title {
-    font-size: 48px;
+    font-size: 52px;
     line-height: 1.2;
     margin-bottom: 15px;
   }
 
   .typing-text {
-    font-size: 24px;
+    font-size: 28px;
     width: 100%;
     border-right: none;
     animation: none;
@@ -380,10 +387,11 @@ body {
   /* BUTTONS */
 
   .hero-buttons {
+    width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    width: 100%;
   }
 
   .hero-btn {
@@ -411,6 +419,7 @@ body {
 
   .section h2 {
     font-size: 42px;
+    text-align: center;
   }
 
   /* ABOUT */
@@ -418,6 +427,7 @@ body {
   .about-text {
     font-size: 18px;
     line-height: 1.8;
+    text-align: center;
   }
 
   /* BOXES */
@@ -425,8 +435,10 @@ body {
   .education-boxes,
   .skills-container,
   .project-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .box,
