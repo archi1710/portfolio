@@ -7,6 +7,8 @@
 }
 
 body {
+
+  overflow-x: hidden;
   background: linear-gradient(to bottom, #050816, #111827);
 }
 
@@ -135,7 +137,7 @@ body {
 /* SECTION */
 
 .section {
-  padding: 60px 80px;
+  padding: 50px 20px;
 }
 
 .section h2 {
@@ -307,62 +309,71 @@ body {
 
   /* NAVBAR */
 
-  .navbar {
-    padding: 20px;
-    flex-direction: column;
-    gap: 15px;
-  }
+.navbar {
+  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 
-  .nav-links {
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.logo {
+  font-size: 28px;
+}
 
-  .nav-links a {
-    font-size: 16px;
-  }
+.nav-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-links a {
+  font-size: 18px;
+}
 
   /* HERO SECTION */
 
   .hero {
-    flex-direction: column-reverse;
-    text-align: center;
-    padding: 140px 25px 60px;
-    gap: 40px;
-  }
-
+  flex-direction: column-reverse;
+  justify-content: center;
+  text-align: center;
+  padding: 180px 20px 80px;
+  gap: 30px;
+}
   .hero-left {
     align-items: center;
   }
 
   .hero-title {
-    font-size: 48px;
-  }
+  font-size: 48px;
+  line-height: 1.2;
+}
 
   .typing-text {
-    font-size: 24px;
-  }
-
+  font-size: 24px;
+}
   .hero-text p {
     font-size: 18px;
   }
 
   .hero-buttons {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
 
-  .hero-btn {
-    width: 220px;
-  }
+.hero-btn {
+  width: 220px;
+}
 
   /* IMAGE */
 
   .profile-img {
-    width: 230px;
-    height: 230px;
-  }
+  width: 250px;
+  height: 250px;
+}
 
   /* SECTION */
 
