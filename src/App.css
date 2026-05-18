@@ -308,7 +308,8 @@ body {
 @media screen and (max-width: 768px) {
 
   * {
-    max-width: 100%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
   }
 
@@ -320,15 +321,16 @@ body {
 
   .navbar {
     width: 100%;
-    padding: 15px 10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 15px 10px;
     gap: 15px;
   }
 
   .logo {
-    font-size: 32px;
+    font-size: 30px;
     text-align: center;
   }
 
@@ -337,7 +339,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     flex-wrap: nowrap;
     overflow-x: auto;
     padding: 0 10px;
@@ -345,8 +347,8 @@ body {
 
   .nav-links a {
     font-size: 14px;
-    white-space: nowrap;
     text-decoration: none;
+    white-space: nowrap;
   }
 
   /* HERO SECTION */
@@ -369,14 +371,12 @@ body {
   }
 
   .hero-title {
-    font-size: 52px;
+    font-size: 48px;
     line-height: 1.2;
-    margin-bottom: 15px;
   }
 
   .typing-text {
-    font-size: 28px;
-    width: 100%;
+    font-size: 24px;
     border-right: none;
     animation: none;
   }
