@@ -327,8 +327,11 @@ body {
   gap: 20px;
 }
   .logo {
-  margin-right: auto;
-}
+    font-size: 32px;
+    text-align: center;
+    margin-right: auto;
+
+  }
 
   .nav-links {
     width: 100%;
