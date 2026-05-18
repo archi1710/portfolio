@@ -322,32 +322,25 @@ body {
   width: 100%;
   padding: 15px 20px;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  gap: 20px;
 }
-  .logo {
-    font-size: 32px;
-    text-align: center;
-    margin-right: auto;
 
-  }
+.logo {
+  font-size: 32px;
+  margin-right: auto;
+} 
+}
 
-  .nav-links {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: nowrap;
-  }
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
 
-  .nav-links a {
-    font-size: 15px;
-    white-space: nowrap;
-    text-decoration: none;
-  }
-
+.nav-links a {
+  font-size: 14px;
+}
   /* HERO SECTION */
 
   .hero {
