@@ -330,14 +330,17 @@ body {
 
   .nav-links {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 12px;
+    overflow-x: auto;
   }
 
   .nav-links a {
-    font-size: 18px;
+    font-size: 14px;
+    white-space: nowrap;
   }
 
   /* HERO SECTION */
