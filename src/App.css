@@ -305,6 +305,7 @@ body {
   }
 }
 
+
 @media screen and (max-width: 768px) {
 
   * {
@@ -335,14 +336,12 @@ body {
   }
 
   .nav-links {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: nowrap;
-    overflow-x: auto;
-    padding: 0 10px;
+    margin: 0 auto;
   }
 
   .nav-links a {
